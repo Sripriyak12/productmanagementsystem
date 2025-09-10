@@ -33,8 +33,8 @@ Productify is a full-stack web application for managing products in an e-commerc
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/N200251/productify.git
-cd productify
+git clone https://github.com/Sripriyak12/productmanagementsystem.git
+cd productmanagementsystem
 ```
 
 ### 2. Backend Setup
@@ -51,19 +51,26 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 ```
 
-Start the server:
+### 3. Create Admin User
+Before starting the server, run:
 
 ```bash
-npm run dev
+node createAdmin.js
 ```
-### 3. Frontend Setup
+This will seed the database with an admin account.
+
+✅ Admin Credentials 
+Username: productify Password: productify_12
+
+### 4. Start Backend Server
+```bash
+node server.js
+
+```
+### 5. Frontend Setup
 ```bash
 cd frontend
 npm install
-```
-Start the React app:
-
-```bash
 npm start
 ```
 
